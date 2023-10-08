@@ -1,6 +1,6 @@
 from PIL import Image
 import numpy as np
-from scipy.ndimage.filters import gaussian_filter
+from scipy.ndimage import gaussian_filter
 
 def pixel_sort(PATH, sigma = 1, axis = 1, tresh= 0.05, Reverse = False, Grayscale = False, verbose = True):
     img = Image.open(PATH)
@@ -50,4 +50,14 @@ def pixel_sort(PATH, sigma = 1, axis = 1, tresh= 0.05, Reverse = False, Grayscal
     return img
 
 
-# pixel_sort("Data/Penguins.jpg", Reverse = False, Grayscale = False, sigma = 1, axis = 1, tresh= 0.05)
+# img = pixel_sort("Data/Penguins.jpg", Reverse = False, Grayscale = False, sigma = 1, axis = 1, tresh= 0.05)
+# img.save("Results/full_color_axis_1.jpg")
+# 
+# img = pixel_sort("Data/Penguins.jpg", Reverse = False, Grayscale = False, sigma = 1, axis = 0, tresh= 0.05)
+# img.save("Results/full_color_axis_2.jpg")
+# 
+# img = pixel_sort("Data/Penguins.jpg", Reverse = False, Grayscale = True, sigma = 1, axis = 1, tresh= 0.05)
+# img.save("Results/Grayscale_axis_1.jpg")
+# 
+# img = pixel_sort("Data/Penguins.jpg", Reverse = False, Grayscale = True, sigma = 1, axis = 0, tresh= 0.05)
+# img.save("Results/Grayscale_axis_2.jpg")
