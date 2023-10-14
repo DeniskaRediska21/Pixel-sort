@@ -42,7 +42,7 @@ img = pixel_sort("Data/Penguins.jpg", Reverse = False, Grayscale = True, sigma =
 ```
 
 
-| Original image                       | Full color pixel sort on axis 1                                   | Full color pixel sort on axis 0                                   |
-|--------------------------------------|-------------------------------------------------------------------|-------------------------------------------------------------------|
-| ![Original image](Data/Penguins.jpg) | ![Graysale pixel sort on axis 1](Results/Grayscale_axis_1.jpg)| ![Graysale pixel sort on axis 0](Results/Grayscale_axis_2.jpg)|
+| Original image                       | Graysale pixel sort on axis 1                                  | Graysale pixel sort on axis 0                                  |
+|--------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|
+| ![Original image](Data/Penguins.jpg) | ![Graysale pixel sort on axis 1](Results/Grayscale_axis_1.jpg) | ![Graysale pixel sort on axis 0](Results/Grayscale_axis_2.jpg) |
 
