@@ -24,52 +24,25 @@ pixel_sort(PATH, sigma = 1, axis = 1, tresh= 0.05, Reverse = False, Grayscale = 
 
 ## Gallery
 
-### Original image
-
-![Original image](Data/Penguins.jpg)
-
-__________
-
-### Full color pixel sort on axis 1
-
 ```
-img = pixel_sort("Data/Penguins.jpg", Reverse = False, Grayscale = False, sigma = 1, axis = 1, tresh= 0.05)
-img.save("Results/full_color_axis_1.jpg")
+img = pixel_sort("Data/Penguins.jpg", Reverse = False, Grayscale = False, sigma = 1, axis = 1, tresh= 0.05)# Full color pixel sort on axis 1
+img = pixel_sort("Data/Penguins.jpg", Reverse = False, Grayscale = False, sigma = 1, axis = 0, tresh= 0.05)# Full color pixel sort on axis 0
 ```
 
-![Full color pixel sort on axis 1](Results/full_color_axis_1.jpg)
 
-__________
+| Original image                       | Full color pixel sort on axis 1                                   | Full color pixel sort on axis 0                                   |
+|--------------------------------------|-------------------------------------------------------------------|-------------------------------------------------------------------|
+| ![Original image](Data/Penguins.jpg) | ![Full color pixel sort on axis 1](Results/full_color_axis_1.jpg) | ![Full color pixel sort on axis 0](Results/full_color_axis_2.jpg) |
 
-### Full color pixel sort on axis 0
-
-```
-img = pixel_sort("Data/Penguins.jpg", Reverse = False, Grayscale = False, sigma = 1, axis = 0, tresh= 0.05)
-img.save("Results/full_color_axis_2.jpg")
-```
-
-![Full color pixel sort on axis 0](Results/full_color_axis_2.jpg)
-
-__________
-
-### Grayscale pixel sort on axis 1
+________
 
 ```
-img = pixel_sort("Data/Penguins.jpg", Reverse = False, Grayscale = True, sigma = 1, axis = 1, tresh= 0.05)
-img.save("Results/Grayscale_axis_1.jpg")
+img = pixel_sort("Data/Penguins.jpg", Reverse = False, Grayscale = True, sigma = 1, axis = 1, tresh= 0.05)# Grayscale pixel sort on axis 1
+img = pixel_sort("Data/Penguins.jpg", Reverse = False, Grayscale = True, sigma = 1, axis = 0, tresh= 0.05)# Graysale pixel sort on axis 1
 ```
 
-![Graysale pixel sort on axis 1](Results/Grayscale_axis_1.jpg)
 
-__________
+| Original image                       | Full color pixel sort on axis 1                                   | Full color pixel sort on axis 0                                   |
+|--------------------------------------|-------------------------------------------------------------------|-------------------------------------------------------------------|
+| ![Original image](Data/Penguins.jpg) | ![Graysale pixel sort on axis 1](Results/Grayscale_axis_1.jpg)| ![Graysale pixel sort on axis 0](Results/Grayscale_axis_2.jpg)|
 
-### Graysale pixel sort on axis 1
-
-```
-img = pixel_sort("Data/Penguins.jpg", Reverse = False, Grayscale = True, sigma = 1, axis = 0, tresh= 0.05)
-img.save("Results/Grayscale_axis_2.jpg")
-```
-
-![Graysale pixel sort on axis 0](Results/Grayscale_axis_2.jpg)
-
-__________
