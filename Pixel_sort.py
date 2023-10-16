@@ -3,7 +3,11 @@ import numpy as np
 from scipy.ndimage import gaussian_filter
 
 def pixel_sort(PATH, sigma = 1, axis = 1, tresh= 0.05, Reverse = False, Grayscale = False, verbose = True):
-    img = Image.open(PATH)
+    if IMAGE is None:
+        img = Image.open(PATH)
+    else:
+        img = IMAGE
+
     if axis == 1:
         img = img.transpose(Image.ROTATE_90)
 
